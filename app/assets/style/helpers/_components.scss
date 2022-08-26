@@ -1,0 +1,323 @@
+
+.colorGradient{
+    @include colorGradient(to top, #62DB54, #09ACF5);
+}
+
+
+.titleDecorate {
+    position: relative;
+
+    &::before {
+        @include titleDecorate;
+    }
+}
+
+.titleDecorate-2 {
+    position: relative;
+
+    &::before {
+        @include titleDecorate-2;
+    }
+}
+
+.numberDecorate {
+    position: relative;
+
+    &::before {
+        @include numberDecorate;
+    }
+}
+
+.whiteBlockDecorate {
+    position: relative;
+
+    &::before {
+        @include whiteBlockDecorate;
+    }
+
+    &::after {
+        @include whiteBlockDecorate;
+    }
+}
+
+
+.primaryCorneryBorder {
+    &::after {
+        @include primaryCorneryBorder;
+    }
+
+    &::before {
+        @include primaryCorneryBorder;
+    }
+
+}
+
+.primaryCorneryBorder__1 {
+
+    position: relative;
+
+    &::after {
+        left: 0;
+        top: 0;
+        border-left: 2px solid $primary;
+        border-top: 2px solid $primary;
+        border-start-start-radius: 12px;
+
+        @include mobile {
+            left: -6px;
+            top: -10px;
+        }
+    }
+
+    &::before {
+        right: 0;
+        top: 0;
+        border-right: 2px solid $primary;
+        border-top: 2px solid $primary;
+        border-start-end-radius: 12px;
+
+        @include mobile {
+            right: -6px;
+            top: -10px;
+        }
+    }
+}
+
+.primaryCorneryBorder__2 {
+    &::after {
+        left: -32px;
+        bottom: -32px;
+        border-left: 2px solid $primary;
+        border-bottom: 2px solid $primary;
+        border-bottom-left-radius: 12px;
+
+        @include mobile {
+            left: -6px;
+            bottom: -6px;
+        }
+    }
+
+    &::before {
+        right: -32px;
+        bottom: -32px;
+        border-right: 2px solid $primary;
+        border-bottom: 2px solid $primary;
+        border-bottom-right-radius: 12px;
+
+        @include mobile {
+            right: -6px;
+            bottom: -6px;
+        }
+    }
+
+
+}
+
+
+
+
+
+.textOverflow-3 {
+    @include textOverflow-3;
+}
+
+.min-height-58 {
+    @include pc-plus_min {
+        min-height: 58px;
+    }
+}
+
+.sectionPadding {
+    padding: 80px 0px;
+
+    @include mobile {
+        padding: 40px 0px;
+    }
+}
+
+.py-12-md-9 {
+    padding: 48px 0px;
+
+    @include mobile {
+        padding: 32px 0px;
+    }
+}
+
+.flex-xs-column {
+    @include mobile-xs {
+        flex-direction: column;
+    }
+}
+
+.m-xs-0 {
+    @include mobile-xs {
+        margin: 0 !important;
+    }
+}
+
+.mb-mobile-2 {
+    @include mobile {
+        margin-bottom: 8px !important;
+    }
+}
+
+.mb-xs-2 {
+    @include mobile-xs {
+        margin-bottom: 8px !important;
+    }
+}
+
+
+.btn--buttonLinear {
+    background: linear-gradient(104deg, #09ACF5, #62DB54);
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:active {
+        opacity: 1;
+    }
+}
+
+.link-hover-borderMod {
+    &:hover {
+        border: 1px solid $primary;
+    }
+
+    &:active {
+        border: 1px solid darken($primary, 10%);
+    }
+}
+
+.link-hover-textMod {
+
+    &:hover {
+        cursor: pointer;
+        color: $primary;
+    }
+}
+
+.link-focus-Mod {
+
+    &:focus {
+        border: 1px solid $primary  !important;
+        color: $primary;
+    }
+}
+
+.listStyleType--1 {
+    & li::before {
+        content: "";
+        vertical-align: middle;
+        display: inline-block;
+        background: $primary;
+        margin-right: 8px;
+        margin-bottom: 3px;
+        width: 5px;
+        height: 5px;
+        z-index: 6;
+    }
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 200,
+        'opsz' 24;
+    vertical-align: bottom;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.icon-FILL-0 {
+    font-variation-settings:
+        'FILL' 0,
+}
+
+
+.icon-32 {
+    font-size: 32px;
+}
+
+.icon-40 {
+    font-size: 40px;
+    height: 50px;
+}
+
+.icon-103 {
+    font-size: 103px;
+}
+
+
+.img-range-100 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+
+}
+
+.fs-18 {
+    font-size: 18px;
+    line-height: 1.444;
+}
+
+.fs-xl-18 {
+    @include pc-plus_min {
+        font-size: 18px;
+        line-height: 1.444;
+    }
+}
+
+.fs-32 {
+    font-size: 32px;
+    line-height: 1.156;
+}
+
+.width-pc-plus-6_6 {
+    @include pc-plus {
+        width: calc(50% - 4px);
+    }
+}
+
+.mix-hight-lg-521 {
+    @include pc-plus_min {
+        min-height: 521px !important;
+    }
+}
+
+.bg-xl-black-1c1c{
+    @include pc-plus_min{
+        background-color: #1C1C1C !important;
+    }
+}

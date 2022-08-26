@@ -1,0 +1,107 @@
+---
+title: Coding Home-程式家教
+layout: ./app/layout.ejs
+engine: ejs
+current: checkout
+---
+
+<main>
+    <section class="bg-black bg-xl-black-1c1c border-bottom border-black">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div
+                    class="checkout col-md-8 py-6 pb-md-4 d-flex justify-content-between text-center py-6 pb-md-4 text-gray-c1c1 checkout__number__line1 checkout__number__line2">
+                    <div>
+                        <span class="checkout__number current">1<span
+                                class="material-symbols-outlined checkout__icon current">
+                                check
+                            </span></span>
+                        <p class="checkout__text current">課程報名</p>
+                    </div>
+                    <div>
+                        <span class="checkout__number">2<span class="material-symbols-outlined checkout__icon">
+                                check
+                            </span></span>
+                        <p class="checkout__text">信用卡付款</p>
+                    </div>
+                    <div>
+                        <span class="checkout__number">3<span class="material-symbols-outlined checkout__icon">
+                                check
+                            </span></span>
+                        <p class="checkout__text">付款成功</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black pb-11 pb-xl-36 pt-xl-12 pt-md-6">
+        <div class="container d-xl-flex justify-content-end">
+            <div class="position-relative">
+                <div class="block__1 bg-black-2d2d py-6 px-6 mb-11 py-xl-9 px-xl-3 py-xxl-12 px-xxl-8 mb-xl-0 position-relative">
+                    <img src="./assets/images/teacher01.jpg" alt="teacher-Belinda"
+                        class="rounded-circle img-range-100 border border-primary border-3 mb-4 mb-xl-6">
+                    <h3 class="fs-6 fs-xl-18 mb-2 mb-xl-1 fw-bold text-center">2022 Python 全攻略｜從入門到實務</h3>
+                    <p class="mb-2 text-primary text-center">前端語言</p>
+                    <p>帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+                </div>
+                <div class="block__2  py-6 px-6 py-xl-12 pe-xl-8 ps-xl-28_5 me-xxl-12 bg-black-1c1c">
+                    <h2 class="fs-4 line-height-1_458 text-center mb-6 mb-xl-12 fw-bold">課程報名</h2>
+                    <form action="index.html">
+                        <h4 class="fs-18 text-center text-xl-start fw-bold">選擇付款方式</h4>
+                        <div class="d-xl-flex align-items-start mb-8">
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="py-4 px-4 px-xl-8 border border-white rounded-2 link-focus-Mod text-center me-2 mb-2 me-xl-4 width-pc-plus-6_6">信用卡付款</a>
+                                <a href="#"
+                                    class="py-4 px-4 px-xl-8 border border-white rounded-2 link-focus-Mod text-center mb-2 me-xl-4 width-pc-plus-6_6">超商繳款</a>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="py-4 px-4 px-xl-8 border border-white rounded-2 link-focus-Mod text-center me-2 me-xl-4 width-pc-plus-6_6">ATM轉帳</a>
+                                <a href="#"
+                                    class="py-4 px-4 px-xl-8 border border-white rounded-2 link-focus-Mod text-center width-pc-plus-6_6">12期分期付款</a>
+                            </div>
+                        </div>
+                        <h4 class="fs-18 text-center text-xl-start fw-bold">訂單資訊</h4>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label mb-mobile-2 ">姓名</label>
+                                <input type="text" class="form-control rounded-1" id="name" placeholder="請輸入姓名">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label mb-mobile-2">電話</label>
+                                <input type="tel" class="form-control rounded-1" id="phone" placeholder="請輸入電話號碼">
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label mb-mobile-2">Email</label>
+                                <input type="email" class="form-control rounded-1" id="email" placeholder="請輸入Email">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="courseSelect" class="form-label mb-mobile-2">課程</label>
+                                <select name="courseSelect" id="courseSelect" class="form-control rounded-1">
+                                    <option value="1堂50分鐘" name="courseSelect1">1堂50分鐘</option>
+                                    <option value="3堂50分鐘" name="courseSelect2">3堂50分鐘</option>
+                                    <option value="10堂50分鐘" name="courseSelect3" selected>10堂50分鐘</option>
+                                    <option value="20堂50分鐘" name="courseSelect4">20堂50分鐘</option>
+                                    <option value="客製化課程/專案製作" name="courseSelect5">客製化課程/專案製作</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="datepicker" class="form-label mb-mobile-2">想預約的日期</label>
+                                <input type="text" class="form-control rounded-1" name="date" placeholder="請選擇日期">
+                            </div>
+                            <div class="col-12">
+                                <label for="location" class="form-label mb-mobile-2">上課地點</label>
+                                <input type="text" class="form-control rounded-1" id="location" placeholder="請輸入上課地點">
+                            </div>
+                            <div class="col-12 d-md-flex justify-content-between align-items-center">
+                                <span class="font-family-Azeret fs-18 mb-6 mt-2 m-md-0 d-block">NT$1600</span>
+                                <a href="checkout-pay.html" class="btn--buttonLinear fs-18 py-2 px-4 px-md-12 text-center">前往結賬</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
