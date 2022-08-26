@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Coding Home-程式家教
+  </title>
+
+  <link rel="shortcut icon" href="./assets/images/Coding Home.png" type="image/x-icon">
+
+  <meta name="description" content="Coding Home-程式家教">
+  <meta name="keywords" content="Coding,程式語言,程式語言家教">
+
+  <meta name="og:description" content="Coding,程式語言,程式語言家教">
+  <meta name="og:title" content="Coding Home-程式家教">
+  <meta name="og:type" content="website">
+  <meta name="og:url" content="#">
+  <meta name="og:img" content="#">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="checkout-succse--page d-flex flex-column">
+  <header class="header header--decorativeLine bg-dark fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1><a href="index.html" class="header__title">Coding Home</a></h1>
+      <ul class="d-flex header__menu">
+        <li><a href="index.html" class="py-8 me-12 fs-18">首頁</a></li>
+        <li><a href="class.html" class="py-8 me-12 fs-18">課程介紹</a></li>
+        <li><a href="#" class="py-8 fs-18" data-bs-toggle="modal" data-bs-target="#logIn"><span
+              class="material-symbols-outlined fs-4">
+              account_circle
+            </span>登入</a></li>
+      </ul>
+      <ul class="mobile mobile__menu  position-absolute overflow-hidden bg-dark text-center">
+        <li><a href="index.html" class="py-3 fs-18">首頁</a></li>
+        <li><a href="class.html" class="py-3 fs-18">課程介紹</a></li>
+        <li><a href="#" class="py-3 fs-18" data-bs-toggle="modal" data-bs-target="#logIn"><span
+              class="material-symbols-outlined fs-4">
+              account_circle
+            </span>登入</a></li>
+      </ul>
+      <a href="#" class="mobile mobile__openButton py-6"><span class="material-symbols-outlined">
+          drag_handle
+        </span></a>
+    </div>
+  </header>
+  <!-- logIn Modal -->
+  <div class="modal fade" id="logIn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="logInLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable logIn">
+      <div class="modal-content bg-dark rounded-0 border-white">
+        <div class="modal-header justify-content-center border-none logIn__content">
+          <h3 class="modal-title text-white fs-4 fw-bold" id="logInLabel">登入</h3>
+          <button type="button" class="btn-close m-0 position-absolute r-21" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body  logIn__content">
+          <form>
+            <div class="mb-6">
+              <label for="Email" class="form-label">信箱</label>
+              <input type="email" class="form-control rounded-1" id="Email" placeholder="請輸入信箱">
+            </div>
+            <div class="mb-6">
+              <label for="Password" class="form-label">密碼</label>
+              <input type="password" class="form-control rounded-1" id="Password" placeholder="請輸入密碼">
+            </div>
+            <div class="d-grid">
+              <input href="checkout.html" type="submit" class="btn btn--buttonLinear text-white fs-18 mb-12" value="登入">
+            </div>
+          </form>
+          <div class="d-grid text-center">
+            <p class="text-gray-form logIn__content__text position-relative mb-4">其他登入方式</p>
+            <a href="#"
+              class="btn text-white d-flex justify-content-center position-relative border border-white mb-6 rounded-1"
+              data-bs-dismiss="modal"><img src="./assets/images/icon_fb.svg" alt="Facebook"
+                class="logIn__content__img"></img>Facebook 登入</a>
+            <a href="#"
+              class="btn text-white d-flex justify-content-center position-relative border border-white mb-12 rounded-1"
+              data-bs-dismiss="modal"><img src="./assets/images/icon_google.svg" alt="Google"
+                class="logIn__content__img"></img>Google 登入</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<main>
+    <section class="bg-black bg-xl-black-1c1c border-bottom border-black">
+        <div class="container">
+            <div class="row justify-content-center current--1 current--2">
+                <div
+                    class="checkout col-md-8 py-6 pb-md-4 d-flex justify-content-between text-center py-6 pb-md-4 text-gray-c1c1 checkout__number__line1 checkout__number__line2">
+                    <div>
+                        <span class="checkout__number current">1<span
+                                class="material-symbols-outlined checkout__icon current">
+                                check
+                            </span></span>
+                        <p class="checkout__text current">課程報名</p>
+                    </div>
+                    <div>
+                        <span class="checkout__number current">2<span class="material-symbols-outlined checkout__icon current">
+                                check
+                            </span></span>
+                        <p class="checkout__text current">信用卡付款</p>
+                    </div>
+                    <div>
+                        <span class="checkout__number">3<span class="material-symbols-outlined checkout__icon current">
+                                check
+                            </span></span>
+                        <p class="checkout__text current">付款成功</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black pt-3 pb-10 pt-md-12 pb-md-20  mix-hight-642 mix-hight-lg-521">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-12">
+                    <div class=" bg-black-1c1c py-6 px-6 py-lg-12 px-lg-8">
+                        <h2 class="fw-bold mb-7_5 mb-lg-13_5 fs-4 line-height-1_458 text-center"><span class="material-symbols-outlined icon-FILL-0 icon-40 text-primary align-middle me-4_5">
+                            verified
+                            </span>完成訂購</h2>
+                        <p class="mb-6 mb-lg-8">恭喜您已完成「2022 Python 全攻略｜從入門到實務」課程報名，請注意郵件訊息，家教老師將與您聯繫！</p>
+                        <a href="class.html"
+                            class="fs-18 btn--buttonLinear py-2 px-4 px-md-12 text-center">看看其他課程</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer class="footer bg-black-1a1a">
+      <div class="container">
+        <p class="text-center py-6 text-gray-footer fs-6 footer__text">Coding Home © 2022 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js.map"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+      
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 160, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 600, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      });
+      </script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
