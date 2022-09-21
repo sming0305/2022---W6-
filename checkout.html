@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -86,11 +87,11 @@
           <div class="d-grid text-center">
             <p class="text-gray-form logIn__content__text position-relative mb-4">其他登入方式</p>
             <a href="#"
-              class="btn text-white d-flex justify-content-center position-relative border border-white mb-6 rounded-1"
+              class="btn btn-outline-light d-flex justify-content-center position-relative border border-white mb-6 rounded-1"
               data-bs-dismiss="modal"><img src="./assets/images/icon_fb.svg" alt="Facebook"
                 class="logIn__content__img"></img>Facebook 登入</a>
             <a href="#"
-              class="btn text-white d-flex justify-content-center position-relative border border-white mb-12 rounded-1"
+              class="btn btn-outline-light d-flex justify-content-center position-relative border border-white mb-12 rounded-1"
               data-bs-dismiss="modal"><img src="./assets/images/icon_google.svg" alt="Google"
                 class="logIn__content__img"></img>Google 登入</a>
           </div>
@@ -212,7 +213,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js.map"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -225,8 +225,6 @@
         disableMutationObserver: false, // disables automatic mutations' detections (advanced)
         debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
         throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-        
-      
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
         offset: 160, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
